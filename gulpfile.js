@@ -10,7 +10,7 @@ var config = {
     port: 9005,
     devBaseUrl: 'http://localhost',
     paths: {
-        html: './src/*/html',
+        html: './src/*.html',
         build: './build'
     }
 };
@@ -26,17 +26,22 @@ gulp.task('connect', function () {
 });
 
 gulp.task('open', ['connect'], function () {
-    gulp.src('dist/index.html')
+    gulp.src('build/index.html')
         .pipe(open({
-            uri: config.devBaseUrl + ':' + config.port + '/'
+            uri: config.devBaseUrl + ':' + config.port + '/',
+            app: 'chrome'
         }));
 });
 
-gulp.task('html', function(){
+gulp.task('html', function () {
     gulp.src(config.paths.html)
         .pipe(gulp.dest(config.paths.build))
         .pipe(connect.reload());
 });
 
-gulp.task('default', ['html', 'open']);
+gulp.task('watch', function () {
+    gulp.watch(config.paths.html, ['html']);
+});
+
+gulp.task('default', ['html', 'open', 'watch']);
 
