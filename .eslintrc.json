@@ -1,0 +1,37 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "shared-node-browser": true,
+    "es6": true
+  },
+  "globals": {
+    "angular": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "ignore": [
+    "js/libs/*"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      4
+    ],
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-console": 0
+  }
+}

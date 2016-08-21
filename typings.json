@@ -1,0 +1,10 @@
+{
+  "name": "react-and-flux",
+  "dependencies": {},
+  "globalDevDependencies": {
+    "gulp": "registry:dt/gulp#3.8.0+20160724062653"
+  },
+  "globalDependencies": {
+    "node": "registry:dt/node#6.0.0+20160818175514"
+  }
+}
