@@ -3,10 +3,14 @@
     "node": true,
     "browser": true,
     "shared-node-browser": true,
-    "es6": true
+    "jquery": true
+  },
+  "ecmaFeatures": {
+    "jsx": true
   },
   "globals": {
-    "angular": true
+    "jQuery": true,
+    "$": true
   },
   "extends": "eslint:recommended",
   "parserOptions": {
