@@ -68,5 +68,5 @@ gulp.task('watch', function () {
     gulp.watch(config.paths.js, ['js']);
 });
 
-gulp.task('default', ['html', 'js', 'open', 'watch']);
+gulp.task('default', ['html', 'js', 'css', 'open', 'watch']);
 
