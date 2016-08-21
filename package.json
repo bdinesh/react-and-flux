@@ -2,7 +2,7 @@
   "name": "react-and-flux",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "dependencies": {},
   "devDependencies": {
     "browserify": "^13.1.0",
