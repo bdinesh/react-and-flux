@@ -5,7 +5,11 @@
   "main": "main.js",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jquery": "^3.1.0"
+    "flux": "^2.1.1",
+    "jquery": "^3.1.0",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-router": "^2.7.0"
   },
   "devDependencies": {
     "browserify": "^13.1.0",
